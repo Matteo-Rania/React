@@ -1,8 +1,7 @@
 import './App.css';
 
-function App() {
-  const hello = <h1>Hello, World!</h1>;
-  return hello
+function saluta(nome){
+  return <h1>Hello {nome}</h1>
 }
 
-export default App;
+export default saluta;

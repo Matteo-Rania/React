@@ -1,7 +1,7 @@
 import './App.css';
 
-function saluta(nome){
-  return <h1>Hello {nome}</h1>
+function sum(a,b){
+  return <h1>the sum is: {a + b}</h1>
 }
 
-export default saluta;
+export default sum;

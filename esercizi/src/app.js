@@ -4,6 +4,6 @@ import { Welcome } from "./welcome";
 
 export class App extends React.Component{
     render(){
-        return <Welcome name='Matteo' age={22} />
+        return <Welcome name={<strong>Matteo</strong>} age={22} />
     }
 }

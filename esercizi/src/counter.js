@@ -10,7 +10,7 @@ export class Counter extends React.Component{
         setInterval(() => {
             this.setState((state) => {
                 return {
-                    count : this.state.count + 1
+                    count : state.count + 1
                 }
             })
         }, 1000)

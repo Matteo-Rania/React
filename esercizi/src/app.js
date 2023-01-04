@@ -1,9 +1,10 @@
 import React from "react";
-import { Welcome } from "./welcome";
+import {Counter} from "./counter";
+
 
 
 export class App extends React.Component{
     render(){
-        return <Welcome name={<strong>Matteo</strong>} age={22} />
+        return <Counter />
     }
 }

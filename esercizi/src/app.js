@@ -1,10 +1,10 @@
 import React from "react";
-import {Counter} from "./ClickCounter";
+import { ClickTracker } from "./ClickTracker";
 
 
 
 export class App extends React.Component{
     render(){
-        return <Counter initialValue= {0} increment ={2}/>
+        return <ClickTracker />
     }
 }

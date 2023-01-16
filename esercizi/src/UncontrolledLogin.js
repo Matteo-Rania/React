@@ -1,6 +1,7 @@
 import React from "react";
 
 export class UncontrolledLogin extends React.Component{
+
     handleSubmit = event => {
         event.preventDefault()
         console.log(event.target.elements.username.value);
@@ -12,7 +13,7 @@ export class UncontrolledLogin extends React.Component{
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input name= "username" />
+                <input name= "username" autoFocus />
                 <input name= "password" type="password" />
                 <input name = "remember" type= "checkbox"/>
                 <button type="submit">Login</button>
@@ -21,3 +22,4 @@ export class UncontrolledLogin extends React.Component{
         )
     }
 }
+

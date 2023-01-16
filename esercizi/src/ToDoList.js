@@ -2,7 +2,7 @@ import React from "react";
 
 export class ToDoList extends React.Component{
     state = {
-        items: [],
+        items: ['studiare', 'dormire'],
         add: '',
     }
     submitTodo = event => {

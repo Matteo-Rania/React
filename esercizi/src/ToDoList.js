@@ -35,7 +35,7 @@ export class ToDoList extends React.Component{
                     <button type="reset" onClick={this.resetBtn}>Reset</button>
                 </form>
                 <ul>
-                    {this.state.items.map(item => <li>{item}</li>)}
+                    {this.state.items.map((item, index) => <li key={index}>{item}</li>)}
                 </ul>
             </div>
         )

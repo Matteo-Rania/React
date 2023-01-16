@@ -18,6 +18,12 @@ export class ToDoList extends React.Component{
             add: value,
         })
     }
+    resetBtn = (event) => {
+        event.preventDefault()
+        this.setState({
+            items : [],
+        })
+    }
 
     render(){
         return(
@@ -26,6 +32,7 @@ export class ToDoList extends React.Component{
                 <form onSubmit={this.submitTodo}>
                     <input value={this.state.add} onChange={this.addItem} />
                     <button type="submit">Aggiungi</button>
+                    <button type="reset" onClick={this.resetBtn}>Reset</button>
                 </form>
                 <ul>
                     {this.state.items.map(item => <li>{item}</li>)}

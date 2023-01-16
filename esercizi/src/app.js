@@ -1,10 +1,15 @@
 import React from "react";
-import { Login } from "./Login";
+import { UncontrolledLogin } from "./UncontrolledLogin";
+
 
 
 
 export class App extends React.Component{
     render(){
-        return <Login />
+        return (
+            <div>
+                <UncontrolledLogin />
+            </div>
+        )
     }
 }

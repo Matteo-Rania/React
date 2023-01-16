@@ -8,7 +8,8 @@ export class ToDoList extends React.Component{
     submitTodo = event => {
         event.preventDefault();
         this.setState({
-            items:[...this.state.items, this.state.add]
+            items:[...this.state.items, this.state.add],
+            add:'',
         })
     }
     addItem = event =>{
@@ -22,13 +23,13 @@ export class ToDoList extends React.Component{
         return(
             <div>
                 <h1>To Do List</h1>
-                <ul>
-                    {this.state.items.map(item => <li>{item}</li>)}
-                </ul>
                 <form onSubmit={this.submitTodo}>
                     <input value={this.state.add} onChange={this.addItem} />
                     <button type="submit">Aggiungi</button>
                 </form>
+                <ul>
+                    {this.state.items.map(item => <li>{item}</li>)}
+                </ul>
             </div>
         )
     }

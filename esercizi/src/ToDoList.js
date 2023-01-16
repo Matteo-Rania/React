@@ -24,6 +24,10 @@ export class ToDoList extends React.Component{
             items : [],
         })
     }
+    removeBtn = event => {
+        event.preventDefault();
+        event.target.parentElement.remove();
+    }
 
     render(){
         return(
@@ -35,7 +39,13 @@ export class ToDoList extends React.Component{
                     <button type="reset" onClick={this.resetBtn}>Reset</button>
                 </form>
                 <ul>
-                    {this.state.items.map((item, index) => <li key={index}>{item}</li>)}
+                    {this.state.items.map((item, index) =>
+                    <div key={index} style={{display:'flex', gap:'10px'}}>
+                        <li>
+                        {item}
+                        </li>
+                        <button onClick={this.removeBtn}>Rimuovi</button>
+                    </div>)}
                 </ul>
             </div>
         )

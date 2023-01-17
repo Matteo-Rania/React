@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "./Container";
 import { Login } from "./Login";
 import { Welcome } from "./Welcome";
 
@@ -6,10 +7,10 @@ import { Welcome } from "./Welcome";
 export class App extends React.Component{
     render(){
         return (
-            <div className="flex-column">
+            <Container className="flex-column">
                 <Welcome name='matteo' />
                 <Login />
-            </div>
+            </Container>
         )
     }
 }

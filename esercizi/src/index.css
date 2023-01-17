@@ -1,9 +1,13 @@
-.welcome{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .welcome{
     background-color: beige;
     border: 2px solid black;
 }
 .flex-column{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+} */

@@ -34,13 +34,15 @@ export class Login extends React.Component{
             color : this.state.password.length < 8 ? 'red' : 'green',
         }
         return (
-            <div>
+            <div className="flex gap-1">
                 <input 
+                className="border-4"
                 name = 'username'
                 value ={this.state.username}
                 onChange = {this.handleInputChange}
                 />
                 <input 
+                className="border-4"
                 name = 'password'
                 type='password'
                 value ={this.state.password}

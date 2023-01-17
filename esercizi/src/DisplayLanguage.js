@@ -15,10 +15,10 @@ export class DisplayLanguage extends React.Component{
         return(
             <div>
                 <LanguageContext.Consumer>
-                    {(lenguage) =>{
+                    {(language) =>{
                         return(
                          <div>
-                            {text[lenguage].CURRENT_TITLE}
+                            {text[language].CURRENT_TITLE}
                         </div>
                         )
                     }}

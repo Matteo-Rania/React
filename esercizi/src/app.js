@@ -7,7 +7,7 @@ import { Welcome } from "./Welcome";
 export class App extends React.Component{
     render(){
         return (
-            <Container className="flex-column">
+            <Container>
                 <Welcome name='matteo' />
                 <Login />
             </Container>

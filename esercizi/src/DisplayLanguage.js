@@ -15,11 +15,14 @@ export class DisplayLanguage extends React.Component{
         return(
             <div>
                 <LanguageContext.Consumer>
-                    {(lenguage) =>{
+                    {(language) =>{
                         return(
                          <div>
-                            {text[lenguage].CURRENT_TITLE}
+                            {text[language].CURRENT_TITLE},
+                            {language === 'en' ? <h1 >The selected language is: <span className="uppercase">{language}</span></h1>
+                             : <h1>La lingua selezionata è: <span className="uppercase">{language}</span></h1>}
                         </div>
+                        
                         )
                     }}
                 </LanguageContext.Consumer>

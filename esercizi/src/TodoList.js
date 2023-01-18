@@ -31,7 +31,7 @@ export class ToDoList extends React.Component{
     renderItems = (items,removeBtn) => {
         return items.map((item,index) => {
             return(
-                    <li>
+                    <li key={index}>
                         {item}
                         <button onClick={removeBtn}>Rimuovi</button>
                     </li>

@@ -1,11 +1,11 @@
 import React from "react";
-import { ClickCounter } from "./ClickCounter";
+import { GitHubUser } from "./GitHubUser";
 
 
     export function App(){
         return (
             <div>
-                <ClickCounter />
+                <GitHubUser username = 'Matteo-Rania' />
             </div>
         )
     }

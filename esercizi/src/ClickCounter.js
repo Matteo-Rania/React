@@ -1,17 +1,24 @@
 import { useEffect, useState } from "react";
 
-export function ClickCounter({initialValue = 0}) {
+export function ClickCounter({initialValue = 0, increment = 1, interval = 1000}) {
     const [counter, setCounter] = useState(initialValue);
-    
+
     useEffect(() => {
-        onCounterChange(counter)
-    },[counter])
+        incrementCounter();
 
-    const onCounterChange = (value) => console.log(` the current value is ${value}`)
+        return () => {
+            setCounter(initialValue)
+        }
+    },[initialValue])
 
-    const handleCounterIncrement = () => {
-        setCounter(c => c + 1)
+    const incrementCounter = () => {
+        setInterval(() => {
+            setCounter((counter) => counter + increment)
+        }, interval)
     }
+    
+ 
+
 
 
 
@@ -19,7 +26,6 @@ export function ClickCounter({initialValue = 0}) {
 
         <div>
             <h2>  Count : {counter}</h2>
-            <button onClick={handleCounterIncrement}>Increment</button>
         </div>
     )
 }

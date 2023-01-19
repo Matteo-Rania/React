@@ -2,12 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .welcome{
-    background-color: beige;
-    border: 2px solid black;
-}
-.flex-column{
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-} */

@@ -1,13 +1,12 @@
 import React from "react";
-import { Sum } from "./Sum";
-
+import { ClickCounter } from "./ClickCounter";
 
 export class App extends React.Component{
     render(){
         return (
             <div>
-                <Sum />
-            </div> 
+                <ClickCounter />
+            </div>
         )
     }
 }

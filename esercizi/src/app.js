@@ -1,9 +1,10 @@
-import { ClickCounter } from "./ClickCounter" 
+import { Login } from "./Login";
+
 
 export function App() {
     return (
         <div>
-            <ClickCounter />
+            <Login />
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { useCounter } from "./UseCounter"
+import { useCounter } from "./useCounter"
 
 export function ClickCounter({initialValue = 0}) {
     const {counter, increment, decrement, reset,} = useCounter(initialValue)

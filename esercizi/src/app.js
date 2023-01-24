@@ -1,11 +1,9 @@
-import React from "react";
-import { GithubUserList } from "./GithubUserList";
+import { ClickCounter } from "./ClickCounter" 
 
-
-    export function App(){
-        return (
-            <div>
-                <GithubUserList />
-            </div>
-        )
-    }
+export function App() {
+    return (
+        <div>
+            <ClickCounter />
+        </div>
+    )
+}

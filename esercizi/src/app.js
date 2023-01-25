@@ -1,10 +1,10 @@
-import { GitHubUser } from "./GitHubUser";
+import { CarDetailsForm } from "./CarDetailsForm";
 
 
 export function App() {
     return (
         <div>
-            <GitHubUser  username = 'matteo-rania'/>
+            <CarDetailsForm />
         </div>
     )
 }

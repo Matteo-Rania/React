@@ -14,9 +14,9 @@ export function App() {
             </div>
             <div className=" m-6">
                 <Routes>
-                    <Route exact path='/' element={<Welcome nome='Matteo' />} />
-                    <Route exact path='/counter' element={<ClickCounter />} />
-                    <Route exact path='/users/:username' element={<ShowGithubUser />} />
+                    <Route path='/' element={<Welcome nome='Matteo' />} />
+                    <Route path='/counter' element={<ClickCounter />} />
+                    <Route path='/users/:username' element={<ShowGithubUser />} />
                 </Routes>
             </div>
         </div>

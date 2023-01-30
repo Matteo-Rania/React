@@ -8,16 +8,11 @@ export function useGithubUser(username) {
          fetcher
         )
 
-        function refreshUser() {
-            mutate()
-        }
-
 
 
     return {
         data,
         error,
         loading: !data && !error,
-        onRefresh: refreshUser,
     }
 }

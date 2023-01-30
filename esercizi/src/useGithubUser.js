@@ -1,4 +1,4 @@
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 
 const fetcher = url => fetch(url).then((response) => response.json());
 
@@ -8,10 +8,16 @@ export function useGithubUser(username) {
          fetcher
         )
 
+        function refreshUser() {
+            mutate()
+        }
+
+
 
     return {
         data,
         error,
         loading: !data && !error,
+        onRefresh: refreshUser,
     }
 }
